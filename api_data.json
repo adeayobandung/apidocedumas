@@ -1,26 +1,26 @@
 [
   {
     "type": "post",
-    "url": "/api/dumas",
-    "title": "1.Menginsert Data Dumas dan Akun Login SP2HP2",
+    "url": "/api/laporkanpolisi",
+    "title": "1.Menginsert Data Laporkan Polisi dan Akun Login SP2HP2",
     "version": "0.1.0",
-    "name": "setPengaduanMasyarakat",
-    "group": "Pengaduan_Masyarakat",
+    "name": "setLaporkanPolisi",
+    "group": "Laporkan_Polisi",
     "permission": [
       {
         "name": "public"
       }
     ],
-    "description": "<p>digunakan mengirim data pengaduan dumas dan membuat akun login sp2hp2.</p>",
+    "description": "<p>digunakan mengirim data pengaduan laporkan polisi dan membuat akun login sp2hp2.</p>",
     "examples": [
       {
         "title": "Cara penggunaan",
-        "content": "https://bidpropam.jambi.polri.go.id/api/dumas",
+        "content": "https://bidpropam.jambi.polri.go.id/api/laporkanpolisi",
         "type": "json"
       },
       {
         "title": "JSON",
-        "content": "{\n\t\"namaLengkap\":\"Ade Indra Saputra\", \n\t\"noHp\":\"6285227281672\",\n\t\"tglKejadian\":\"2020-01-01\",\n\t\"tmpKejadian\":\"Jambi\",\n\t\"namaPelaku\":\"Lina Novianti\",\n\t\"namaKorban\":\"Ade Indra Saputra\",\n\t\"kronologisKejadian\":\"Dirumah Saja\",\n\t\"persetujuan\":\"Y\"\n}",
+        "content": "{\n\t\"namaLengkap\": \"Ade Indra Saputra\",\n\t\"noHp\": \"6285227281672\",\n\t\"kewarganegaraan\": \"WNI\",\n\t\"tmpLahir\": \"Tambun Arang\",\n\t\"tglLahir\": \"2020-08-19\",\n\t\"jnsKelamin\": \"L\",\n\t\"pekerjaan\": \"Programmer\",\n\t\"alamat\": \"Jambi\",\n\t\"agama\": \"Islam\",\n\t\"waktuKejadian\": \"2020-08-20\",\n\t\"tmpKejadian\": \"Jl. TP. Sriwijaya Perumahan Villa Melati Asri\",\n\t\"namaPelaku\": \"Lina Novianti\",\n\t\"namaKorban\": \"Ade Indra S\",\n\t\"bgmKejadian\": \"Kami ucapkan terimakasih kepada Saudara yang telah memberikan keterangan (informasi), apabilamasih  memerlukan  informasi  lanjutan,  maupun  ada  masukan  yang  akan  disampaikan,  dapatmenghubungi Yanduan Bidpropam Polda Jambi di No HP. 08527339497\",\n\t\"apaTerjadi\": \"Kami ucapkan terimakasih kepada Saudara yang telah memberikan keterangan (informasi), apabilamasih  memerlukan  informasi  lanjutan,  maupun  ada  masukan  yang  akan  disampaikan,  dapatmenghubungi Yanduan Bidpropam Polda Jambi di No HP. 08527339497\",\n\t\"brgBukti\": \"Kami ucapkan terimakasih kepada Saudara yang telah memberikan keterangan (informasi), apabilamasih  memerlukan  informasi  lanjutan,  maupun  ada  masukan  yang  akan  disampaikan,  dapatmenghubungi Yanduan Bidpropam Polda Jambi di No HP. 08527339497\",\n\t\"persetujuan\": \"Y\"\n}",
         "type": "json"
       },
       {
@@ -50,48 +50,104 @@
             "group": "Parameter",
             "type": "string",
             "optional": false,
-            "field": "tglKejadian",
-            "description": "<p>berisi data tanggal</p>"
+            "field": "kewarganegaraan",
+            "description": "<p>kewarganegaraan pelapor</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "tmpLahir",
+            "description": "<p>tempat lahir pelapor</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "tglLahir",
+            "description": "<p>tgl lahir pelapor</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "jnsKelamin",
+            "description": "<p>jenis kelamin pelapor</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "pekerjaan",
+            "description": "<p>pekerjaan pelapor</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "alamat",
+            "description": "<p>alamat pelapor</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "agama",
+            "description": "<p>agama pelapor</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "waktuKejadian",
+            "description": "<p>waktu kejadian perkara</p>"
           },
           {
             "group": "Parameter",
             "type": "string",
             "optional": false,
             "field": "tmpKejadian",
-            "description": "<p>berisi lokasi kejadian</p>"
+            "description": "<p>tempat kejadian perkara</p>"
           },
           {
             "group": "Parameter",
             "type": "string",
             "optional": false,
             "field": "namaPelaku",
-            "description": "<p>berisi nama pelaku yang di laporkan</p>"
+            "description": "<p>nama pelaku/personel</p>"
           },
           {
             "group": "Parameter",
             "type": "string",
             "optional": false,
-            "field": "namaKorba",
-            "description": "<p>berisi nama korban</p>"
+            "field": "namaKorban",
+            "description": "<p>nama korban</p>"
           },
           {
             "group": "Parameter",
             "type": "string",
             "optional": false,
-            "field": "kronologisKejadian",
-            "description": "<p>berisi kronologis kejadian</p>"
+            "field": "bgmKejadian",
+            "description": "<p>bagaimana kejadian?</p>"
           },
           {
             "group": "Parameter",
             "type": "string",
             "optional": false,
-            "field": "persetujuan",
-            "description": "<p>harus berisi Y</p>"
+            "field": "apaTerjadi",
+            "description": "<p>apa yang terjadi?</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "brgBukti",
+            "description": "<p>barang bukti yang ditemukan</p>"
           }
         ]
       }
     },
-    "filename": "./example.js",
-    "groupTitle": "Pengaduan_Masyarakat"
+    "filename": "./lp.js",
+    "groupTitle": "Laporkan_Polisi"
   }
 ]
