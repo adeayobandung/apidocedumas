@@ -19,6 +19,11 @@ define({ "api": [
         "type": "json"
       },
       {
+        "title": "JSON",
+        "content": "{\n\t\"namaLengkap\":\"Ade Indra Saputra\", \n\t\"noHp\":\"6285227281672\",\n\t\"tglKejadian\":\"2020-01-01\",\n\t\"tmpKejadian\":\"Jambi\",\n\t\"namaPelaku\":\"Lina Novianti\",\n\t\"namaKorban\":\"Ade Indra Saputra\",\n\t\"kronologisKejadian\":\"Dirumah Saja\",\n\t\"persetujuan\":\"Y\"\n}",
+        "type": "json"
+      },
+      {
         "title": "Setting Header",
         "content": "Content-type : application/json\nAccept : application/json",
         "type": "json"
