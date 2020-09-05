@@ -151,7 +151,7 @@ define({ "api": [
     "groupTitle": "Laporkan_Polisi"
   },
   {
-    "type": "post",
+    "type": "get",
     "url": "/api/sp2hp2/pengaduan/{id}",
     "title": "2.Show SP2HP2",
     "version": "0.1.0",
