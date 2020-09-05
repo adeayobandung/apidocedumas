@@ -152,6 +152,64 @@ define({ "api": [
   },
   {
     "type": "post",
+    "url": "/api/sp2hp2/login",
+    "title": "1.Login SP2HP2",
+    "version": "0.1.0",
+    "name": "setLoginSp2hp2",
+    "group": "Login_SP2HP2",
+    "permission": [
+      {
+        "name": "public"
+      }
+    ],
+    "description": "<p>digunakan untuk login sp2hp2.</p>",
+    "examples": [
+      {
+        "title": "Cara penggunaan",
+        "content": "https://bidpropam.jambi.polri.go.id/api/sp2hp2/login",
+        "type": "json"
+      },
+      {
+        "title": "JSON",
+        "content": "{\n\t\"username\":\"0808200206\", \n\t\"password\":\"475\",\n}",
+        "type": "json"
+      },
+      {
+        "title": "Setting Header",
+        "content": "Content-type : application/json\nAccept : application/json",
+        "type": "json"
+      },
+      {
+        "title": "Output",
+        "content": "{\n \"data\": {\n   \"username\": \"0808200206\",\n   \"password\": \"475\",\n   \"noHp\": \"6285227281672\",\n   \"tipePengaduan\": \"LP\",\n   \"statusOTP\": \"Y\",\n   \"statusPengaduan\": \"O\",\n   \"noUrut\": 3\n },\n \"meta\": {\n   \"status\": 1,\n   \"kodeOTP\": \"4758\",\n   \"message\": \"Berhasil melakukan login\"\n }\n}",
+        "type": "json"
+      }
+    ],
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "username",
+            "description": "<p>username user didapatkan dari SMS</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "string",
+            "optional": false,
+            "field": "password",
+            "description": "<p>password user didapatkan dari SMS</p>"
+          }
+        ]
+      }
+    },
+    "filename": "./example.js",
+    "groupTitle": "Login_SP2HP2"
+  },
+  {
+    "type": "post",
     "url": "/api/dumas",
     "title": "1.Menginsert Data Dumas dan Akun Login SP2HP2",
     "version": "0.1.0",
