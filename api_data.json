@@ -152,6 +152,42 @@
   },
   {
     "type": "post",
+    "url": "/api/sp2hp2/pengaduan/{id}",
+    "title": "2.Show SP2HP2",
+    "version": "0.1.0",
+    "name": "getLoginSp2hp2",
+    "group": "Login_SP2HP2",
+    "permission": [
+      {
+        "name": "public"
+      }
+    ],
+    "description": "<p>digunakan untuk menampilkan data sp2hp2.</p>",
+    "examples": [
+      {
+        "title": "Cara penggunaan",
+        "content": "https://bidpropam.jambi.polri.go.id/api/sp2hp2/pengaduan/1",
+        "type": "json"
+      }
+    ],
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "integer",
+            "optional": false,
+            "field": "id",
+            "description": "<p>id login user yang di dapatkan di meta success login</p>"
+          }
+        ]
+      }
+    },
+    "filename": "./example.js",
+    "groupTitle": "Login_SP2HP2"
+  },
+  {
+    "type": "post",
     "url": "/api/sp2hp2/login",
     "title": "1.Login SP2HP2",
     "version": "0.1.0",
