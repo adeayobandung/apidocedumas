@@ -168,6 +168,16 @@
         "title": "Cara penggunaan",
         "content": "https://bidpropam.jambi.polri.go.id/api/sp2hp2/pengaduan/1",
         "type": "json"
+      },
+      {
+        "title": "Out Pengaduan Masyarakat (DM)",
+        "content": "{\n \"data\": {\n   \"namaLengkap\": \"idham\",\n   \"noHp\": \"6282373312463\",\n   \"username\": \"4808200311\",\n   \"password\": \"143\",\n   \"tglKejadian\": \"2020-08-04\",\n   \"tmpKejadian\": \"polda jambi\",\n   \"namaPelaku\": \"endro\",\n   \"namaKorban\": \"idham\",\n   \"kronologisKejadian\": \"saya dipukul\",\n   \"created_at\": \"1 week ago\"\n }\n}",
+        "type": "json"
+      },
+      {
+        "title": "Out Laporkan Polisi (LP)",
+        "content": "{\n \"data\": {\n   \"namaLengkap\": \"idham\",\n   \"noHp\": \"6282373312463\",\n   \"username\": \"2608200306\",\n   \"password\": \"142\",\n   \"kewarganegaraan\": \"WNI\",\n   \"tmpLahir\": \"sarolangun\",\n   \"tglLahir\": \"2020-08-04\",\n   \"jnsKelamin\": \"L\",\n   \"pekerjaan\": \"PNS\",\n   \"alamat\": \"the hok\",\n   \"agama\": \"Islam\",\n   \"waktuKejadian\": \"2020-08-21\",\n   \"tmpKejadian\": \"polda jambi\",\n   \"namaPelaku\": \"endro\",\n   \"namaKorban\": \"idham\",\n   \"bgmKejadian\": \"terjadi pemukulan\",\n   \"apaTerjadi\": \"terjadi pemukulan\",\n   \"brgBukti\": \"visum\",\n   \"persetujuan\": \"Y\"\n }\n}",
+        "type": "json"
       }
     ],
     "parameter": {
@@ -217,7 +227,7 @@
       },
       {
         "title": "Output",
-        "content": "{\n \"data\": {\n   \"username\": \"0808200206\",\n   \"password\": \"475\",\n   \"noHp\": \"6285227281672\",\n   \"tipePengaduan\": \"LP\",\n   \"statusOTP\": \"Y\",\n   \"statusPengaduan\": \"O\",\n   \"noUrut\": 3\n },\n \"meta\": {\n   \"status\": 1,\n   \"kodeOTP\": \"4758\",\n   \"message\": \"Berhasil melakukan login\"\n }\n}",
+        "content": "{\n \"data\": {\n   \"username\": \"0808200206\",\n   \"password\": \"475\",\n   \"noHp\": \"6285227281672\",\n   \"tipePengaduan\": \"LP\",\n   \"statusOTP\": \"Y\",\n   \"statusPengaduan\": \"O\",\n   \"noUrut\": 3\n },\n \"meta\": {\n   \"id\": 1,\n   \"kodeOTP\": \"4758\",\n   \"status\": 1,\n   \"message\": \"Berhasil melakukan login\"\n }\n}",
         "type": "json"
       }
     ],
